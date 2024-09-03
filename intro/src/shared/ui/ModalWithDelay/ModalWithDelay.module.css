@@ -1,0 +1,12 @@
+.success,
+.failed {
+  z-index: 15;
+}
+
+.success {
+  color: green;
+}
+
+.failed {
+  color: red;
+}
