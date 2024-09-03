@@ -1,0 +1,15 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.title {
+    text-align: center;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.tooltip {
+    width: 85px;
+}
