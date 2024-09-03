@@ -25,8 +25,14 @@ const AuthForm = ({onClose}) => {
 
     e.preventDefault();
 
-    for (let error in errors) {
-      if (errors[error]) {
+    const newErrors = {
+      ...validateField('email', email),
+      ...validateField('password', password),
+    }
+
+    for (let error in newErrors) {
+      if (newErrors[error] !== '') {
+        setErrors(newErrors)
         setIsLoading(false)
         return
       }
